@@ -18,9 +18,20 @@ namespace KuanLun
 
         #endregion
         #region 事件:程式入口
+
+        private void Awake()
+        {
+            ani = GetComponent<Animator>();
+        }
+
         private void Start()
         {
             print("2ㄏ2ㄏ");
+        }
+
+        private void Update()
+        {
+            print("測一下fps");
         }
         #endregion
 
