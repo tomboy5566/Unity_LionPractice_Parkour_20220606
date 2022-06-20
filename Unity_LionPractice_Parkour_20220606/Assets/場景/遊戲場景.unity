@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 157192737}
   - component: {fileID: 157192736}
   - component: {fileID: 157192738}
+  - component: {fileID: 157192739}
   m_Layer: 0
   m_Name: "\u73A9\u5BB6"
   m_TagString: Untagged
@@ -267,7 +268,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &157192738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +282,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedRun: 3.5
-  heightJump: 1989
+--- !u!114 &157192739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157192732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4797bee4232f2b74e9e70f04253ee81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heightJump: 350
+--- !u!1 &475379105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475379107}
+  m_Layer: 0
+  m_Name: APINonStaticTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475379107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475379105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1546493, y: -0.026224606, z: 3.158898}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636457991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,7 +2331,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7740113, y: 1}
+    m_SensorSize: {x: 1.7789855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2405,7 +2449,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1961411006}
-  - component: {fileID: 1961411005}
   m_Layer: 0
   m_Name: "\u96A8\u6A5F\u503C\u6E2C\u8A66"
   m_TagString: Untagged
@@ -2413,18 +2456,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1961411005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961411004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 200cb6f2f98fc6e4aaf3c6e34a330627, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1961411006
 Transform:
   m_ObjectHideFlags: 0
