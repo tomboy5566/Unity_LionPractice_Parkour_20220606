@@ -39,15 +39,23 @@ namespace KuanLun
             Physics.sleepThreshold = 10;
             // 時間大小設定為 0.5 (慢動作)
             Time.timeScale = 0.5f;
-
+            //對 9.999 去小數點 (不限制去除方式)
+            print($"9.999去小數點為: {Mathf.Floor(9.999f)}");
+            //取得兩點的距離
+            print($"(1,1,1)和(22,22,22)的距離為: {Vector3.Distance(new Vector3 (1,1,1), new Vector3(22,22,22))}");
+            //開啟連結
+            Application.OpenURL("https://unity.com/");
         }
 
         private void Update()
         {
             // 是否輸入任意鍵
             print($"現在是否輸入任意鍵: {Input.anyKey}");
+            //是否按下按鍵 (指定為空白鍵)
+            print($"現在是否按下空白鍵: {Input.GetKeyDown("space")}");
             // 遊戲經過時間
             print($"現在遊戲時間: {Time.realtimeSinceStartup}");
+            
         }
 
         #endregion

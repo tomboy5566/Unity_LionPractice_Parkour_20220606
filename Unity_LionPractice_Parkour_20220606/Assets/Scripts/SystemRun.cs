@@ -31,7 +31,7 @@ namespace KuanLun
 
         private void Update()
         {
-            print("測一下fps");
+            //print("測一下fps");
         }
         #endregion
 
