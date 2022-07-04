@@ -40,7 +40,14 @@ namespace KuanLun
             Run();
         }
         #endregion
-
+        private void OnEnable()
+        {
+            
+        }
+        private void OnDisable()
+        {
+            rig.velocity = Vector2.zero;
+        }
 
     }
 }
