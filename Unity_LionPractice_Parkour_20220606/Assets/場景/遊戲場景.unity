@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40463695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.29, z: 0}
+  m_LocalPosition: {x: -0.86, y: -1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.685
+  m_FalloffIntensity: 0.446
   m_Color: {r: 0.7845319, g: 0.8041668, b: 0.8113208, a: 1}
   m_Intensity: 0.85
   m_LightVolumeIntensity: 1
@@ -3296,8 +3296,8 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 100, y: 20}
-  m_AdaptiveModeThreshold: 0.5
+  m_Size: {x: 100, y: 23}
+  m_AdaptiveModeThreshold: 0.612
   m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
@@ -3833,7 +3833,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.806
   sharedProfile: {fileID: 11400000, guid: 6994ffaf4a9efd748886df60619520b5, type: 2}
 --- !u!4 &1275752123
 Transform:
