@@ -38,6 +38,7 @@ namespace KuanLun
         {
             //print("´ú¤@¤Ufps");
             Run();
+            
         }
         #endregion
         private void OnEnable()

@@ -15,10 +15,15 @@ namespace KuanLun
         private Color groundcheckcolor = new Color(1, 0, 0.2f, 0.5f);
         [SerializeField, Header("檢查圖層")]
         private LayerMask layergroundcheck;
+        [SerializeField, Header("跳躍開關控制")]
+        private string nameJump = "跳躍開關";
+        [SerializeField, Header("跳躍音效")]
+        private AudioClip jumpsound;
         private Animator ani;
         private Rigidbody2D rig;
         private bool clickJump;
         private bool isGround;
+        private AudioSource audioJump;
         #endregion
         #region 功能
         private void Jump()
@@ -38,6 +43,7 @@ namespace KuanLun
             {
                 rig.AddForce(new Vector2(0, heightJump));
                 clickJump = false;
+                audioJump.PlayOneShot(jumpsound, Random.Range(0.7f, 1.2f));
             }
         }
         private void GroundCheck()
@@ -45,6 +51,10 @@ namespace KuanLun
             Collider2D hitground = Physics2D.OverlapBox(transform.position + v3groundcheckOffset, v3groundchecksize, 0, layergroundcheck);
             //print("目前碰撞物件為: " + hitground.name);
             isGround = hitground;
+        }
+        private void JumpAni()
+        {
+            ani.SetBool(nameJump, !isGround);
         }
         #endregion
         #region 事件
@@ -58,6 +68,7 @@ namespace KuanLun
         {
             Jump();
             GroundCheck();
+            JumpAni();
         }
         private void FixedUpdate()
         {
@@ -67,6 +78,7 @@ namespace KuanLun
         {
             ani = GetComponent<Animator>();
             rig = GetComponent<Rigidbody2D>();
+            audioJump = GetComponent<AudioSource>();
         }
         #endregion
 
